@@ -1,0 +1,125 @@
+2022-11-03 08:53:50.228  INFO 3484 --- [main] com.demo.spring.VisitApplication         : Starting VisitApplication using Java 11 on WKWIN1236584 with PID 3484 (C:\MockProject\spring-petclinic-mockproject\visit-service\target\classes started by hawvigne in C:\MockProject\spring-petclinic-mockproject\visit-service)
+2022-11-03 08:53:50.241  INFO 3484 --- [main] com.demo.spring.VisitApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-11-03 08:53:50.607  INFO 3484 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888/
+2022-11-03 08:53:50.607  INFO 3484 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Connect Timeout Exception on Url - http://localhost:8888/. Will be trying the next url if available
+2022-11-03 08:53:50.611  WARN 3484 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@79a1728c uris = array<String>['http://localhost:8888/'], optional = true, profiles = list['default']]): I/O error on GET request for "http://localhost:8888/visit-service/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2022-11-03 08:53:55.894  INFO 3484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-03 08:53:56.657  INFO 3484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 739 ms. Found 1 JPA repository interfaces.
+2022-11-03 08:53:57.608  INFO 3484 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=521de066-35af-336c-9107-c8f10b4df5ae
+2022-11-03 08:53:59.551  INFO 3484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8191 (http)
+2022-11-03 08:53:59.585  INFO 3484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 08:53:59.586  INFO 3484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-03 08:54:00.328  INFO 3484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 08:54:00.329  INFO 3484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9642 ms
+2022-11-03 08:54:00.969 ERROR 3484 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webMvcMetricsFilter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/web/servlet/WebMvcMetricsAutoConfiguration.class]: Unsatisfied dependency expressed through method 'webMvcMetricsFilter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prometheusMeterRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/export/prometheus/PrometheusMetricsExportAutoConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourcePoolMetadataMeterBinder' defined in class path resource [org/springframework/boot/actuate/autoconfigure/metrics/jdbc/DataSourcePoolMetricsAutoConfiguration$DataSourcePoolMetadataMetricsConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourcePoolMetadataMeterBinder' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-11-03 08:54:01.058  INFO 3484 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-03 08:54:01.076  WARN 3484 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-11-03 08:54:01.141  INFO 3484 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-03 08:54:01.193 ERROR 3484 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-11-03 08:54:54.955  INFO 21364 --- [main] com.demo.spring.VisitApplication         : Starting VisitApplication using Java 11 on WKWIN1236584 with PID 21364 (C:\MockProject\spring-petclinic-mockproject\visit-service\target\classes started by hawvigne in C:\MockProject\spring-petclinic-mockproject\visit-service)
+2022-11-03 08:54:54.958  INFO 21364 --- [main] com.demo.spring.VisitApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-11-03 08:54:54.999  INFO 21364 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888/
+2022-11-03 08:54:54.999  INFO 21364 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=visit-service, profiles=[default], label=null, version=3764ca5853dfd012234306a56dbba6e840569ec7, state=null
+2022-11-03 08:54:56.131  INFO 21364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-03 08:54:56.275  INFO 21364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 1 JPA repository interfaces.
+2022-11-03 08:54:56.480  INFO 21364 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=521de066-35af-336c-9107-c8f10b4df5ae
+2022-11-03 08:54:56.790  INFO 21364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8191 (http)
+2022-11-03 08:54:56.799  INFO 21364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-03 08:54:56.800  INFO 21364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-11-03 08:54:56.948  INFO 21364 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-03 08:54:56.948  INFO 21364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1945 ms
+2022-11-03 08:54:57.206  INFO 21364 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-03 08:54:57.256  INFO 21364 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.11.Final
+2022-11-03 08:54:57.408  INFO 21364 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-03 08:54:57.493  INFO 21364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-03 08:54:57.568  INFO 21364 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-03 08:54:57.596  INFO 21364 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB106Dialect
+2022-11-03 08:54:58.048  INFO 21364 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-03 08:54:58.059  INFO 21364 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-03 08:54:58.615  WARN 21364 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-03 08:55:00.923  INFO 21364 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-11-03 08:55:01.439  INFO 21364 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-03 08:55:01.441  INFO 21364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-03 08:55:02.619  INFO 21364 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-11-03 08:55:02.629  INFO 21364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-11-03 08:55:02.642  INFO 21364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1201 ms
+2022-11-03 08:55:02.643  INFO 21364 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-03 08:55:02.710  WARN 21364 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-03 08:55:02.776  INFO 21364 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-03 08:55:02.810  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-03 08:55:02.815  INFO 21364 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 08:55:02.837  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-03 08:55:02.838  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-03 08:55:02.838  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-03 08:55:02.838  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-03 08:55:02.838  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-03 08:55:02.839  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-03 08:55:02.839  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-03 08:55:03.045  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-03 08:55:03.048  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-03 08:55:03.051  INFO 21364 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-03 08:55:03.055  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1667445903054 with initial instances count: 2
+2022-11-03 08:55:03.057  INFO 21364 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application VISIT-SERVICE with eureka with status UP
+2022-11-03 08:55:03.057  INFO 21364 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667445903057, current=UP, previous=STARTING]
+2022-11-03 08:55:03.060  INFO 21364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISIT-SERVICE/localhost:visit-service:8191: registering service...
+2022-11-03 08:55:03.086  INFO 21364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8191 (http) with context path ''
+2022-11-03 08:55:03.087  INFO 21364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISIT-SERVICE/localhost:visit-service:8191 - registration status: 204
+2022-11-03 08:55:03.087  INFO 21364 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8191
+2022-11-03 08:55:04.409  INFO 21364 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-11-03 08:55:04.413  INFO 21364 --- [main] com.demo.spring.VisitApplication         : Started VisitApplication in 24.207 seconds (JVM running for 25.258)
+2022-11-03 09:00:02.851  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:05:02.868  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:10:02.883  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:15:02.889  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:20:02.896  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:25:02.900  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:30:02.905  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:35:02.918  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:40:02.932  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:45:02.940  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:50:02.947  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 09:55:02.972  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:00:03.013  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:05:03.034  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:10:03.059  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:15:03.069  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:20:03.083  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:25:03.089  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:30:03.096  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:35:03.106  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:40:03.121  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:45:03.126  INFO 21364 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-03 10:46:53.451  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-03 10:46:53.466  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application VISIT-SERVICE with eureka with status DOWN
+2022-11-03 10:46:53.468  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1667452613468, current=DOWN, previous=UP]
+2022-11-03 10:46:53.486  INFO 21364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISIT-SERVICE/localhost:visit-service:8191: registering service...
+2022-11-03 10:46:53.652  INFO 21364 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISIT-SERVICE/localhost:visit-service:8191 - registration status: 204
+2022-11-03 10:46:55.654  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-03 10:46:55.666  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-03 10:46:55.763  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-03 10:46:55.804  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-03 10:46:55.840  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-03 10:46:55.845  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-03 10:46:58.863  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-03 10:46:58.881  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_VISIT-SERVICE/localhost:visit-service:8191 - deregister  status: 200
+2022-11-03 10:46:58.899  INFO 21364 --- [RMI TCP Connection(144)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

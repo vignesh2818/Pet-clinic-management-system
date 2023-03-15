@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;pet-clinic-gateway&apos; to &apos;api-gateway&apos;" description="Rename resource &apos;pet-clinic-gateway&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/pet-clinic-gateway" name="api-gateway" stamp="1667214551480" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;api-gateway&apos; to &apos;pet-clinic-gateway&apos;" description="Rename resource &apos;api-gateway&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/api-gateway" name="pet-clinic-gateway" stamp="1667214590455" updateReferences="true"/>
+</session>

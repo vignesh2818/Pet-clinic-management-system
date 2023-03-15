@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+	crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>List All Page</title>
+</head>
+<body style="background-color:#EAEBB9">
+	<div>
+		<table class="table table-success table-stripped"
+			style="max-width: 70%; margin-left: 20%">
+			<tr>
+				<th>Pet Id</th>
+				<th>Pet Name</th>
+				<th>Pet Type</th>
+				<th>Owner Id</th>
+			</tr>
+			    <tr th:each="pet:${petList}">
+				<td><span th:text="${pet.petId}"></span></td>
+				<td><span th:text="${pet.petName}"></span></td>
+				<td><span th:text="${pet.petType}"></span></td>
+				<td><span th:text="${pet.ownerId}"></span></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

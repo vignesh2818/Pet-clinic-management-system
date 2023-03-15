@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Delete Vet Page</title>
+<style type="text/css">
+.form-submit-button {
+background: #79B3E9;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 30px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+.form-submit-button:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 30px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+</style>
+</head>
+<body style="background-color:#EAEBB9; text-align: center">
+	<form action="deleteVet" method="post">
+		<span style="font-family:verdana;font-size:27px;text-align:center">Enter Vet Id:</span><br><br>
+		<input style="height:20px;background-color:lightblue;font-size:13px;font-family:verdana;" type="text" name="vetId"><br><br>
+		<input style="height:40px; width:120px" class="form-submit-button" type="submit" name="RemoveVet">
+	</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+server:
+#  address: 127.0.0.1
+  port: 9191
+spring:
+  application:
+    name: pet-clinic-gateway
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+      - id: visit_service
+        uri: lb://visit-service
+        predicates: 
+        - Path=/visit/**
+      
+      - id: owner_service
+        uri: lb://owner-service
+        predicates: 
+        - Path=/owner/**
+        
+      - id: owner_service
+        uri: lb://owner-service
+        predicates: 
+        - Path=/pet/**
+        
+        
+      - id: vet_service
+        uri: lb://vet-service
+        predicates: 
+        - Path=/speciality/**
+        
+      - id: vet_service
+        uri: lb://vet-service
+        predicates: 
+        - Path=/vet/**
+        
+eureka:
+  client: 
+    register-with-eureka: true
+    service-url:  
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+      

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+	crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>List All Vet By SpecialityID Page</title>
+<style type="text/css">
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-submit-button {
+background: #79B3E9;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 30px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+.form-submit-button:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 30px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+</style>
+</head>
+<body  style="background-color:#EAEBB9; text-align: center">
+	<form action="listbyspecId" method="get">
+		<span style="font-family:verdana;font-size:27px;text-align:center">Enter Speciality ID:</span><br><br>
+		<input style="height:23px;background-color:lightblue;font-size:13px;font-family:verdana;" type="text" name="specialityId"><br><br>
+		<input  style="height:40px; width:120px" class="form-submit-button" type="submit" name="LIST"><br><br>
+	</form>
+	<div th:each="vet:${vetListId}">
+			<table class="table table-success table-stripped"
+			style="max-width: 70%; margin-left: 20%">
+			<tr>
+				<th>Vet Id</th>
+				<th>Vet Name</th>
+				<th>Vet Contact</th>
+				<th>Speciality Id</th>
+			</tr>
+			<tr>
+				<td><span th:text="${vet.vetId}"></span></td>
+				<td><span th:text="${vet.vetName}"></span></td>
+				<td><span th:text="${vet.vetContact}"></span></td>
+				<td><span th:text="${vet.specialityId}"></span></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+</body>
+</html>

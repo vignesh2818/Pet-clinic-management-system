@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Finder Page Of Vet</title>
+<style type="text/css">
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-submit-button {
+background: #79B3E9;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 30px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+.form-submit-button:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 30px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+</style>
+</head>
+<body style="background-color:#EAEBB9; text-align: center">
+	<form action="findvet" method="get">
+		<span style="font-family:verdana;font-size:27px;text-align:center">Enter Vet ID:</span><br><br>
+		<input style="height:20px;background-color:lightblue;font-size:13px;font-family:verdana;" type="text" name="vetId"><br><br>
+		<input style="height:30px; width:120px" class="form-submit-button"  type="submit" name="FIND-VET"><br><br>
+	</form>
+	<div th:switch="${vet}">
+		<div th:case="null">
+			<h1>No Data</h1>
+		</div>
+		<div th:case="*">
+			<table border="1" class="center" bgcolor="lightblue" style="border-width: thick;">
+				<tr>
+					<td>Vet Id:</td>
+					<td><span th:text="${vet.vetId}"></span></td>
+				</tr>
+				<tr>
+					<td>Vet Name:</td>
+					<td><span th:text="${vet.vetName}"></span></td>
+				</tr>
+				<tr>
+					<td>Vet Contact:</td>
+					<td><span th:text="${vet.vetContact}"></span></td>
+				</tr>
+				<tr>
+					<td>Speciality ID:</td>
+					<td><span th:text="${vet.specialityId}"></span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+
+\Web:TableWithoutCaptionCheck." Add a description to this table.(§”Ù¹øÿÿÿÿHÖ^RMINORZBUG
+b	Web:S1827."+Remove this deprecated "bgcolor" attribute.(§”Ù¹øÿÿÿÿ8…ª½ĞÀ0HØ^RMAJORZ
+CODE_SMELL
+d	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(ñúºH×^RMAJORZBUG
+N	Web:S5256."%Add "<th>" headers to this "<table>".(§”Ù¹øÿÿÿÿHÕ^RMAJORZBUG

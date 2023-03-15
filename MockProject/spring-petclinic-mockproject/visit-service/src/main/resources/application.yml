@@ -1,0 +1,36 @@
+server:
+# address: 127.0.0.1
+  port: 8191
+spring:
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://localhost:3306/visitdb
+#    username: root
+#    password: root
+  application:
+    name: visit-service
+    
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888/}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+logging:
+    file:
+      name: visit.log
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - prometheus

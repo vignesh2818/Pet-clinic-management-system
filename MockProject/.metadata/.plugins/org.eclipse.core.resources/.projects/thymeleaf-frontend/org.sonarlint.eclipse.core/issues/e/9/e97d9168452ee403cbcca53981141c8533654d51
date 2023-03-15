@@ -1,0 +1,11 @@
+
+r
+java:S2259-"FA "NullPointerException" could be thrown; "getBody()" can return null.(àÜ½™8ÁÄ½ËÂ0HÎ~RMAJORZBUG
+~
+java:S1192%"HDefine a constant instead of duplicating this literal "Accept" 10 times.(«êöë8¬½¡Ğ¿0HÑ~RCRITICALZ
+CODE_SMELL
+r
+java:S2259*"FA "NullPointerException" could be thrown; "getBody()" can return null.(ğ¢²ğ8ÁÄ½ËÂ0HÜ~RMAJORZBUG
+„
+java:S1192S"IDefine a constant instead of duplicating this literal "response" 6 times.(ÄÇ”¹ÿÿÿÿÿ8ë‰°À0Hß~RCRITICALZ
+CODE_SMELL

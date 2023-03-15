@@ -1,0 +1,10 @@
+
+‹
+java:S1192;"UDefine a constant instead of duplicating this literal "http://owner-service" 3 times.(åÜ³Æ8öÄáÂ0H°RCRITICALZ
+CODE_SMELL
+u
+java:S2259T"DA "NullPointerException" could be thrown; "petdto" is nullable here.(’‹ôæÿÿÿÿÿ8æÆ¡þ¾0H´RMAJORZBUG
+u
+java:S2259i"DA "NullPointerException" could be thrown; "petdto" is nullable here.(’‹ôæÿÿÿÿÿ8âßÿ¾0H¸RMAJORZBUG
+u
+java:S2259>"DA "NullPointerException" could be thrown; "petdto" is nullable here.(’‹ôæÿÿÿÿÿ8²¥ßþ¾0H¼RMAJORZBUG

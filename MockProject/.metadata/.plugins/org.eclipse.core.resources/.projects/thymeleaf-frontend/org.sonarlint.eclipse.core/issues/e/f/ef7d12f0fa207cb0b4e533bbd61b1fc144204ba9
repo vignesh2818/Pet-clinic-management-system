@@ -1,0 +1,14 @@
+
+w
+java:S22594"FA "NullPointerException" could be thrown; "getBody()" can return null.(øƒ‚Ðÿÿÿÿÿ8²éÐÊÂ0H„RMAJORZBUG
+}
+java:S1192!"GDefine a constant instead of duplicating this literal "Accept" 3 times.(«êöë8ïÐÔÆÁ0H‡RCRITICALZ
+CODE_SMELL
+r
+java:S22595"FA "NullPointerException" could be thrown; "getBody()" can return null.(šë½Ü8²éÐÊÂ0H‹RMAJORZBUG
+r
+java:S22593"FA "NullPointerException" could be thrown; "getBody()" can return null.(šë½Ü8²éÐÊÂ0HŽRMAJORZBUG
+k	java:S1063"9Replace this use of System.out or System.err by a logger.(šë½Ü8²éÐÊÂ0H‘RMAJORZ
+CODE_SMELL
+k	java:S1065"9Replace this use of System.out or System.err by a logger.(šë½Ü8²éÐÊÂ0H’RMAJORZ
+CODE_SMELL

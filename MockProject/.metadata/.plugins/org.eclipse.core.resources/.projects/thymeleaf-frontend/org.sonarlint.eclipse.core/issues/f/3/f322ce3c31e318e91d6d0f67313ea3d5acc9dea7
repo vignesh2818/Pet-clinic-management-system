@@ -1,0 +1,15 @@
+
+„
+java:S1192_"IDefine a constant instead of duplicating this literal "response" 7 times.(´ßËŒøÿÿÿÿ8Þýâ¦¿0H±~RCRITICALZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(õçìýùÿÿÿÿ8Äí‰ËÂ0H¹~RMAJORZ
+CODE_SMELL
+w
+java:S2259^"FA "NullPointerException" could be thrown; "getBody()" can return null.(û»¤ùùÿÿÿÿ8þ„êÈÂ0Hº~RMAJORZBUG
+w
+java:S2259<"FA "NullPointerException" could be thrown; "getBody()" can return null.(€ÚÿÆýÿÿÿÿ8§Å¬ËÂ0H½~RMAJORZBUG
+~
+java:S1192#"HDefine a constant instead of duplicating this literal "Accept" 10 times.(«êöë8þà¦¥¿0HÀ~RCRITICALZ
+CODE_SMELL
+w
+java:S2259("FA "NullPointerException" could be thrown; "getBody()" can return null.(ç†üƒúÿÿÿÿ8è†€ËÂ0HË~RMAJORZBUG
